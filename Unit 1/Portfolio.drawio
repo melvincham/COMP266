@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.1">
+  <diagram name="Page-1" id="XVR6JxB19I4pDz7G-dso">
+    <mxGraphModel dx="584" dy="958" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0" adaptiveColors="simple">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wcXxubAUedBhoCoWZDQK-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="wcXxubAUedBhoCoWZDQK-1" target="wcXxubAUedBhoCoWZDQK-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="wcXxubAUedBhoCoWZDQK-1" target="wcXxubAUedBhoCoWZDQK-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" target="wcXxubAUedBhoCoWZDQK-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="wcXxubAUedBhoCoWZDQK-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-1" value="About Me" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-3" value="Contact card&amp;nbsp;&lt;div&gt;About Me&amp;nbsp;&lt;/div&gt;&lt;div&gt;Skills&lt;/div&gt;&lt;div&gt;Latest Projects&lt;/div&gt;&lt;div&gt;&amp;nbsp;GitHub Activity (maybe)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;" vertex="1" parent="wcXxubAUedBhoCoWZDQK-1">
+          <mxGeometry y="20" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-4" value="Resume" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="360" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-5" value="&lt;div&gt;Education&amp;nbsp;&lt;/div&gt;&lt;div&gt;Certifications&lt;/div&gt;&lt;div&gt;Experience&lt;/div&gt;&lt;div&gt;Download Button&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;" vertex="1" parent="wcXxubAUedBhoCoWZDQK-4">
+          <mxGeometry x="5" y="30" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-8" value="Blog" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="360" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-9" value="&lt;div&gt;Blog/Dairy list&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;" vertex="1" parent="wcXxubAUedBhoCoWZDQK-8">
+          <mxGeometry x="5" y="50" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-10" value="Projects" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="360" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-11" value="&lt;div&gt;Project filter&lt;/div&gt;&lt;div&gt;Project list&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;" vertex="1" parent="wcXxubAUedBhoCoWZDQK-10">
+          <mxGeometry x="15" y="35" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-12" value="Contact Me" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="360" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="wcXxubAUedBhoCoWZDQK-13" value="&lt;div&gt;Contact Form&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;" vertex="1" parent="wcXxubAUedBhoCoWZDQK-12">
+          <mxGeometry x="10" y="50" width="100" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

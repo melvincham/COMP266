@@ -1,0 +1,62 @@
+ul {
+    list-style-type: none;
+}
+
+#contactcard {
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.profileimg{
+    width:150px; 
+    height:150px; 
+    border: 2px solid  bisque;
+    border-radius: 75px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.5rem;
+    align-items: start;
+}
+
+#skills ul li {
+    display: inline-block;
+    background-color: #347074 ;
+    border:  1px solid bisque;
+    border-radius:15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.project-list{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 1fr;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    border: 1px solid  bisque;
+    border-radius: 15px;
+    padding: 10px;
+    flex-basis: 48%;
+    box-sizing: border-box;
+}
+
+.project i {
+    grid-row: 1 / span 2;
+    place-self: center;
+    padding-right: 5px;
+}
+
+.project:hover {
+    box-shadow: 0 4px 8px 0 rgba(243, 242, 242, 0.945);
+}

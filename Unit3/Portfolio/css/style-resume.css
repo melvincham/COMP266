@@ -1,0 +1,33 @@
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th , td {
+    border-bottom: 1px solid bisque;
+    padding: 5px;
+}
+
+th {
+    background-color: cadetblue;
+}
+
+tr:nth-child(even){
+    background-color:  rgb(19, 30, 31)
+}
+
+#certifications ul, #experience ul{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    gap: 0.5rem;
+    list-style-position: inside;
+}
+
+#certifications li, #experience li{
+    padding-left: 1rem;
+}
+
+.button{
+    background-color: #1C1C1C;
+}

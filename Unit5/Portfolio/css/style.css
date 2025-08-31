@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    max-width:961px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem; 
+    background-color: black;
+    color: white;
+    margin: 25px;
+    font-family: "Roboto", "consolas", "sans-serif";
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited  {
+    color: #66B9C0;
+}
+
+a:hover, a:active {
+    color: bisque;
+}
+
+.fa-mobile, .fa-users{
+    color:#66B9C0 ;
+}
+
+#header{
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 1px solid bisque;
+    border-radius: 15px;
+    border-bottom: 0;
+}
+
+#header ul {
+    list-style-type: none;
+}
+
+#main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+#footer{
+    border-style: solid;
+    border-width: 1px;
+    border-color: bisque;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#header h1 {
+    margin-right: auto;
+    padding-left: 10px;
+    white-space: nowrap;
+    font-size:large;
+}
+
+#navigation{
+    display:inline-flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: bisque;
+    border-radius:  0px 15px 15px 15px;
+    padding: 10px;
+}
+
+#main-content > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid bisque; 
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.highlight {
+    font-weight: bold;          
+}
+
+.button{
+    display: inline-block;
+    align-self: self-end;
+    border: 1px solid  bisque;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+}
+
+.button:hover{
+    box-shadow: 0 4px 8px 0 rgba(179, 177, 177, 0.945);
+}
+
+.error{
+    color:red;
+    font-size: 13px;
+    display: block;
+}
+
+
+/* smartphones*/ 
+@media (max-width:600px)  { 
+    body{
+        margin: 5px 5px 55px 5px;
+        font-size: 14px;
+    }
+
+    /* Move the header to the buttom for mobile phones */
+    #header h1 {
+        display: none;
+    }
+
+    #navigation {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        display: flex;
+        justify-content: space-around;
+        border-top: 2px solid bisque;
+        border-radius: 0;
+        padding: 0.5rem 0;
+        z-index: 1000;
+    }
+}

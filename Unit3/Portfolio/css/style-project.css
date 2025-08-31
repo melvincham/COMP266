@@ -1,0 +1,20 @@
+.projectimg{
+    width:150px; 
+    height:150px; 
+    border: 2px solid  bisque;
+}
+
+#project-list {
+    display:grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid  bisque;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}

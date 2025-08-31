@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Contact Me - Melvin Cham Acho</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-contact.css" />
+    <script src="js/contact.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Contact Me</h1>
+        <ul id="navigation">
+            <li><a href="index.xhtml">About</a></li>
+            <li><a href="resume.xhtml">Resume</a></li>
+            <li><a href="projects.xhtml">Projects</a></li>
+            <li><a href="blog.xhtml">Blog</a></li>
+            <li><a href="contact.xhtml">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <div>
+            <h2>Contact Form</h2>
+            <form id="myForm" action="mailto:achomelvincham@gmail.com" method="post" enctype="text/plain" >
+                <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" />
+                <span id="name-error" class="error"></span>
+                </p>
+                <p>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" />
+                <span id="email-error" class="error"></span>
+                </p>
+                <p>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <span id="message-error" class="error"></span>
+                </p>
+                <p class="buttonbox">
+                <input type="submit" value="Send" class="button" />
+                <input type="reset" value="Clear" class="button"/>
+                </p>
+            </form>
+        </div>   
+    </div>
+
+    <div id="footer">
+        <p>Author: Melvin Cham Acho</p>
+        <p>Last updated: July 22, 2025</p>
+    </div>
+</body>
+</html>
