@@ -6,37 +6,32 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function loadGitHubActivity() {
-    const username = "melvincham";
-    const feedElement = document.getElementById("github-feed");
+    $.ajax({
+        url: "https://api.github.com/users/melvincham/events/public",
+        method: "GET",
+        dataType: "json",
+        success: function (events) {
+            var container = $("#github");
+            container.empty();
+            container.append("<h2>GitHub Activity Feed</h2>");
 
-    fetch(`https://api.github.com/users/${username}/events/public`)
-        .then(response => response.json())
-        .then(events => {
-            feedElement.innerHTML = ""; // clear placeholder
+            if (events.length === 0) {
+                container.append("<p>No recent public activity found.</p>");
+                return;
+            }
 
-            // Limit to 5 latest activities
-            events.slice(0, 5).forEach(event => {
-                const li = document.createElement("li");
-
-                switch (event.type) {
-                    case "PushEvent":
-                        li.textContent = `Pushed ${event.payload.commits.length} commit(s) to ${event.repo.name}`;
-                        break;
-                    case "CreateEvent":
-                        li.textContent = `Created ${event.repo.name}`;
-                        break;
-                    case "WatchEvent":
-                        li.textContent = `Starred ${event.repo.name}`;
-                        break;
-                    default:
-                        li.textContent = `${event.type} on ${event.repo.name}`;
-                }
-
-                feedElement.appendChild(li);
+            var list = $("<ul></ul>");
+            events.slice(0, 5).forEach(function (event) {
+                var item = $("<li></li>").text(
+                    event.type + " at " + (event.repo ? event.repo.name : "unknown repo")
+                );
+                list.append(item);
             });
-        })
-        .catch(error => {
-            feedElement.innerHTML = "<li>Could not load activity.</li>";
-            console.error("GitHub API error:", error);
-        });
+            container.append(list);
+        },
+        error: function (xhr, status, error) {
+            console.error("Error fetching GitHub activity:", error);
+            $("#github").append("<p>Unable to load GitHub activity at this time.</p>");
+        }
+    });
 }
